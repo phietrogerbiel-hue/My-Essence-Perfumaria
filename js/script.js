@@ -1,18 +1,25 @@
 // ===== PRODUCT DATA =====
 const products = [
-  { id:1, brand:"O Boticário — Cuide-se Bem", name:"Morango & Leite", size:"Body Splash 200ml", price:190, cat:["splash"], img:"images/p01_morango_leite.jpg", desc:"Body splash Cuide-se Bem com fragrância doce de morango e leite. Pele perfumada e vegano." },
-  { id:2, brand:"O Boticário — Cuide-se Bem", name:"Beijinho", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p02_beijinho.jpg", desc:"Fragrância adocicada inspirada no clássico beijinho. Vegano e com pele perfumada de longa duração." },
-  { id:3, brand:"Natura", name:"Ilía Secreto", size:"Eau de Parfum 50ml", price:150, cat:["perfume"], img:"images/p03_ilia_secreto.jpg", desc:"Perfume Ilía Secreto, da linha Natura Ilía — uma fragrância envolvente e misteriosa para o dia a dia." },
-  { id:4, brand:"O Boticário", name:"Arbo", size:"Colônia 100ml", price:150, cat:["perfume"], img:"images/p04_arbo.jpg", desc:"Fragrância verde e amadeirada, inspirada na natureza. Frasco esculpido com relevo de folhagem." },
-  { id:5, brand:"O Boticário — Cuide-se Bem", name:"Show de Banho", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p05_show_banho.jpg", desc:"Body splash Wonder Shower, leve e divertido, com pele perfumada e fórmula vegana." },
-  { id:6, brand:"Natura", name:"Ilía Florescer", size:"Eau de Parfum 50ml", price:150, cat:["perfume"], img:"images/p06_ilia_florescer.jpg", desc:"Perfume Ilía Florescer, com notas florais e amadeiradas em tom rosé — delicadeza em cada borrifada." },
-  { id:7, brand:"O Boticário", name:"Coffee Man Seduction", size:"Colônia 100ml", price:150, cat:["perfume"], img:"images/p07_coffee_man.jpg", desc:"Fragrância masculina intensa com notas de café e amadeirados, para quem gosta de presença marcante." },
-  { id:8, brand:"O Boticário — Cuide-se Bem", name:"Boa Noite", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p08_boa_noite.jpg", desc:"Body splash Good Night, aroma suave e relaxante para fechar o dia. Vegano e pele perfumada." },
-  { id:9, brand:"O Boticário — Cuide-se Bem", name:"Pessegura", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p09_pessegura.jpg", desc:"Fragrância frutada de pêssego, fresca e vegana, com plástico reciclado na embalagem." },
-  { id:10, brand:"O Boticário", name:"Coffee Woman Seduction", size:"Colônia 100ml", price:150, cat:["perfume"], img:"images/p10_coffee_woman.jpg", desc:"Versão feminina da linha Coffee Seduction, com fragrância envolvente e frasco em vidro rosé translúcido." },
-  { id:11, brand:"O Boticário — Cuide-se Bem", name:"Nuvem", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p11_nuvem.jpg", desc:"Fragrância suave e algodoada, inspirada em nuvens. Pele perfumada e fórmula vegana." },
-  { id:12, brand:"O Boticário — Cuide-se Bem", name:"Deleite", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p12_deleite.jpg", desc:"Aroma cremoso e adocicado da linha Deleite, com plástico reciclado e fórmula vegana." },
-  { id:13, brand:"O.U.I Paris", name:"Madeleine 862 La Pistacherie", size:"Eau de Parfum importado", price:150, cat:["perfume","importado"], img:"images/p13_oui_pistacherie.jpg", desc:"Fragrância importada O.U.I Paris, com notas gourmand de pistache — nossa peça de assinatura." },
+  { id:1, brand:"O Boticário — Cuide-se Bem", name:"Morango & Leite", size:"Body Splash 200ml", price:95, cat:["splash"], img:"images/p01_morango_leite.jpg", desc:"Body splash Cuide-se Bem com fragrância doce de morango e leite. Pele perfumada e vegano." },
+  { id:2, brand:"O Boticário — Cuide-se Bem", name:"Beijinho", size:"Body Splash 200ml", price:95, cat:["splash"], img:"images/p02_beijinho.jpg", desc:"Fragrância adocicada inspirada no clássico beijinho. Vegano e com pele perfumada de longa duração." },
+  { id:3, brand:"Natura", name:"Ilía Secreto", size:"Eau de Parfum 50ml", price:185, cat:["perfume"], img:"images/p03_ilia_secreto.jpg", desc:"Perfume Ilía Secreto, da linha Natura Ilía — uma fragrância envolvente e misteriosa para o dia a dia." },
+  { id:4, brand:"O Boticário", name:"Arbo", size:"Colônia 100ml", price:180, cat:["perfume"], img:"images/p04_arbo.jpg", desc:"Fragrância verde e amadeirada, inspirada na natureza. Frasco esculpido com relevo de folhagem." },
+  { id:5, brand:"O Boticário — Cuide-se Bem", name:"Show de Banho", size:"Body Splash 200ml", price:95, cat:["splash"], img:"images/p05_show_banho.jpg", desc:"Body splash Wonder Shower, leve e divertido, com pele perfumada e fórmula vegana." },
+  { id:7, brand:"O Boticário", name:"Coffee Man Seduction", size:"Colônia 100ml", price:215, cat:["perfume"], img:"images/p07_coffee_man.jpg", desc:"Fragrância masculina intensa com notas de café e amadeirados, para quem gosta de presença marcante." },
+  { id:8, brand:"O Boticário — Cuide-se Bem", name:"Boa Noite", size:"Body Splash 200ml", price:95, cat:["splash"], img:"images/p08_boa_noite.jpg", desc:"Body splash Good Night, aroma suave e relaxante para fechar o dia. Vegano e pele perfumada." },
+  { id:9, brand:"O Boticário — Cuide-se Bem", name:"Pessegura", size:"Body Splash 200ml", price:95, cat:["splash"], img:"images/p09_pessegura.jpg", desc:"Fragrância frutada de pêssego, fresca e vegana, com plástico reciclado na embalagem." },
+  { id:10, brand:"O Boticário", name:"Coffee Woman Seduction", size:"Colônia 100ml", price:215, cat:["perfume"], img:"images/p10_coffee_woman.jpg", desc:"Versão feminina da linha Coffee Seduction, com fragrância envolvente e frasco em vidro rosé translúcido." },
+  { id:11, brand:"O Boticário — Cuide-se Bem", name:"Nuvem", size:"Body Splash 200ml", price:95, cat:["splash"], img:"images/p11_nuvem.jpg", desc:"Fragrância suave e algodoada, inspirada em nuvens. Pele perfumada e fórmula vegana." },
+  { id:12, brand:"O Boticário — Cuide-se Bem", name:"Deleite", size:"Body Splash 200ml", price:95, cat:["splash"], img:"images/p12_deleite.jpg", desc:"Aroma cremoso e adocicado da linha Deleite, com plástico reciclado e fórmula vegana." },
+  { id:13, brand:"Eudora", name:"Diva", size:"Desodorante Colônia 100ml", price:145, cat:["perfume"], img:"images/p14_eudora_diva.jpeg", desc:"Adocicado, elegante e cremoso, ideal para quem gosta de perfumes marcantes com fundo abaunilhado e frutado. — nossa peça de assinatura." },
+  { id:14, brand:"WOMEN'SECRET — BODY MIST", name:"So Captivating", size:"Body Mist 250ml", price:100, cat:["splash", "importado"], img:"images/p15_bodysplashred.jpeg", desc:"Body mist Women'Secret So Captivating com fragrância envolvente e partículas de brilho (glitter). Deixa a pele perfumada, iluminada e radiante." },
+  { id:16, brand:"WOMEN'SECRET — BODY MIST", name:"Pretty & Sexy", size:"Body Mist 250ml", price:100, cat:["splash", "importado"], img:"images/p16_bodysplachprt.jpeg", desc:"Body mist Women'Secret Pretty & Sexy com fragrância suave, feminina e apaixonante. Ideal para perfumar a pele com leveza e um toque de frescor no dia a dia." },
+  { id:17, brand:"WOMEN'SECRET — BODY MIST", name:"Daily Romance", size:"Body Mist 250ml", price:100, cat:["splash", "importado"], img:"images/p17_dayli.jpeg", desc:"Body mist Women'Secret Daily Romance com fragrância delicada, romântica e envolvente. Perfeito para manter a pele suavemente perfumada durante todo o dia." },
+  { id:18, brand:"WOMEN'SECRET — BODY MIST", name:"Pure Charm", size:"Body Mist 250ml", price:100, cat:["splash", "importado"], img:"images/p18_bodys.jpeg", desc:"Body mist Women'Secret Pure Charm com fragrância luminosa, charmosa e refrescante. Enriquecido com partículas de brilho (glitter) para deixar a pele levemente perfumada e com um brilho radiante." },
+  { id:19, brand:"NATURA — UNA", name:"Una Artisan", size:"De Parfum 75ml", price:180, cat:["perfume"], img:"images/p19_Una.jpeg", desc:"De Parfum Natura Una Artisan com fragrância chipre floral marcante e sofisticada. Combina notas florais com o toque quente do patchouli e a doçura da baunilha, ideal para momentos especiais." },
+  { id:20, brand:"O BOTICÁRIO — LIZ", name:"Liz Flora", size:"Desodorante Colônia 100ml", price:170, cat:["perfume"], img:"images/p20_bol.jpeg", desc:"Desodorante colônia O Boticário Liz Flora com fragrância amadeirada floral envolvente e sofisticada. Traz a força da flor de Jacarandá combinada à assinatura amadeirada de Liz, inspirada no poder e na trajetória da mulher moderna."},
+  { id:21, brand:"EUDORA — KISS ME", name:"Kiss Me Again", size:"Desodorante Colônia 50ml", price:110, cat:["perfume"], img:"images/p21_kiss.jpeg", desc:"Desodorante colônia Eudora Kiss Me Again com fragrância floriental gourmand apaixonante e marcante. Traz a combinação vibrante de frutas vermelhas com a cremosidade da baunilha, perfeita para expressar sua sensualidade."},
+  { id:22, brand:"O BOTICÁRIO — EGEO", name:"Egeo Bomb Black", size:"Desodorante Colônia 90ml", price:165, cat:["perfume"], img:"images/p22_egeo.jpeg", desc:"Desodorante colônia O Boticário Egeo Bomb Black com fragrância oriental gourmand jovem e intensa. Mistura notas instigantes de couro com o toque doce do caramelo e da baunilha, perfeita para quem gosta de marcar presença."},
 ];
 
 const WA_NUMBER = 559293885732;
@@ -41,7 +48,7 @@ function renderProducts(){
         <h3 class="card-name">${p.name}</h3>
         <span class="card-size">${p.size}</span>
         <div class="card-foot">
-          <div class="card-price"><small>A partir de</small>${money(p.price)}</div>
+          <div class="card-price"><small></small>${money(p.price)}</div>
           <a class="card-buy" href="${waLink('Olá! Tenho interesse no produto: ' + p.name + ' (' + p.size + ').')}" target="_blank" rel="noopener" aria-label="Comprar ${p.name} via WhatsApp" onclick="event.stopPropagation();">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -106,7 +113,7 @@ function openModal(id){
   modalName.textContent = p.name;
   modalSize.textContent = p.size;
   modalDesc.textContent = p.desc;
-  modalPrice.textContent = 'A partir de ' + money(p.price);
+  modalPrice.textContent = money(p.price);
   modalBuy.href = waLink('Olá! Tenho interesse no produto: ' + p.name + ' (' + p.size + ').');
   modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
