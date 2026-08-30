@@ -1,0 +1,43 @@
+/* =========================================================
+   UTILITIES — animação de entrada, botão "voltar ao topo"
+   e botão flutuante do WhatsApp
+   ========================================================= */
+
+/* ===== SCROLL REVEAL GENERIC ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease;}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+
+/* ===== BACK TO TOP ===== */
+.to-top{
+  position:fixed;
+  right:24px;bottom:24px;
+  width:48px;height:48px;
+  border-radius:50%;
+  background:var(--ink);
+  color:var(--paper);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;
+  transform:translateY(10px);
+  pointer-events:none;
+  transition:opacity .3s ease, transform .3s ease;
+  z-index:800;
+}
+.to-top.show{opacity:1;transform:translateY(0);pointer-events:auto;}
+
+/* ===== WHATSAPP FLOAT ===== */
+.wa-float{
+  position:fixed;
+  left:24px;bottom:24px;
+  z-index:800;
+  background:#1f2a1c;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 20px 14px 16px;
+  border-radius:40px;
+  box-shadow:0 16px 34px -12px rgba(0,0,0,.4);
+  transition:transform .25s ease;
+}
+.wa-float:hover{transform:translateY(-3px);}
+.wa-float span{font-size:12.5px;letter-spacing:0.04em;font-weight:600;}

@@ -1,0 +1,109 @@
+/* =========================================================
+   CATALOG — filtros e grade de produtos (cards)
+   ========================================================= */
+
+.catalog{background:var(--paper);}
+.filters{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.filter-btn{
+  padding:10px 20px;
+  font-size:12px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  font-weight:600;
+  border:1px solid var(--line);
+  border-radius:30px;
+  background:transparent;
+  color:var(--ink-soft);
+  transition:all .25s ease;
+}
+.filter-btn.active,.filter-btn:hover{
+  background:var(--ink);
+  border-color:var(--ink);
+  color:var(--paper);
+}
+
+.grid-products{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2px;
+  background:var(--line);
+  border:1px solid var(--line);
+}
+.card{
+  background:var(--paper);
+  display:flex;
+  flex-direction:column;
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.card.in-view{opacity:1;transform:translateY(0);}
+.card.hidden-item{display:none;}
+
+.card-media{
+  position:relative;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  background:var(--paper-alt);
+  cursor:pointer;
+}
+.card-media img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .6s cubic-bezier(.16,1,.3,1);
+}
+.card:hover .card-media img{transform:scale(1.06);}
+.card-tag{
+  position:absolute;top:12px;left:12px;
+  background:var(--white);
+  font-size:9.5px;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  font-weight:700;
+  padding:5px 10px;
+  color:var(--ink-soft);
+}
+.card-expand{
+  position:absolute;
+  bottom:12px;right:12px;
+  width:34px;height:34px;
+  background:rgba(255,255,255,.92);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;
+  transform:translateY(8px);
+  transition:opacity .3s ease, transform .3s ease;
+}
+.card:hover .card-expand{opacity:1;transform:translateY(0);}
+.card-body{
+  padding:22px 22px 24px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  flex:1;
+}
+.card-brand{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--nude-deep);font-weight:600;}
+.card-name{font-family:'Fraunces',serif;font-size:19px;font-weight:500;line-height:1.25;}
+.card-size{font-size:12.5px;color:var(--ink-soft);}
+.card-foot{
+  margin-top:auto;
+  padding-top:16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.card-price{font-family:'Fraunces',serif;font-size:19px;font-weight:500;}
+.card-price small{font-family:'Work Sans',sans-serif;font-size:11px;color:var(--ink-soft);display:block;font-weight:400;}
+.card-buy{
+  width:40px;height:40px;
+  border-radius:50%;
+  border:1px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  transition:background .25s ease, color .25s ease;
+  flex-shrink:0;
+}
+.card-buy:hover{background:var(--ink);color:var(--paper);}

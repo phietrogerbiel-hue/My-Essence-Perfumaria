@@ -1,0 +1,38 @@
+/* =========================================================
+   MARQUEE — faixa escura com texto rolando
+   ========================================================= */
+
+.marquee{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:var(--ink);
+  overflow:hidden;
+  padding:16px 0;
+}
+.marquee-track{
+  display:flex;
+  width:max-content;
+  animation:scroll-left 32s linear infinite;
+}
+.marquee-track span{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:16px;
+  color:var(--paper);
+  padding:0 28px;
+  white-space:nowrap;
+  opacity:0.9;
+}
+.marquee-track span::after{
+  content:"·";
+  font-style:normal;
+  margin-left:28px;
+  color:var(--nude);
+}
+@keyframes scroll-left{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+@media (prefers-reduced-motion: reduce){
+  .marquee-track{animation:none;}
+}

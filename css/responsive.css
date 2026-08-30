@@ -1,0 +1,40 @@
+/* =========================================================
+   RESPONSIVE — ajustes de layout por breakpoint
+   Este arquivo deve ser sempre o ÚLTIMO <link> carregado no
+   HTML, para garantir que essas regras sobrescrevam as demais.
+   ========================================================= */
+
+@media (max-width:1080px){
+  .grid-products{grid-template-columns:repeat(3,1fr);}
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-visual{order:-1;margin-bottom:20px;}
+  .about-grid{grid-template-columns:1fr;}
+  .about-visual{max-width:420px;}
+}
+@media (max-width:860px){
+  nav.primary-nav{display:none;}
+  .nav-actions .btn-outline{display:none;}
+  .burger{display:flex;}
+  .why-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .grid-products{grid-template-columns:repeat(2,1fr);}
+  .modal-box{grid-template-columns:1fr;}
+  .modal-media{min-height:220px;}
+}
+@media (max-width:560px){
+  .wrap{padding:0 20px;}
+  section{padding:76px 0;}
+  .hero{padding-top:calc(var(--nav-h) + 40px);padding-bottom:60px;}
+  .hero-badge{position:static;margin-top:16px;max-width:none;}
+  .grid-products{grid-template-columns:repeat(2,1fr);}
+  .card-body{padding:16px 16px 18px;}
+  .card-name{font-size:16px;}
+  .footer-top{grid-template-columns:1fr;gap:32px;}
+  .wa-float span{display:none;}
+  .wa-float{padding:14px;}
+  .section-head{flex-direction:column;align-items:flex-start;}
+  .cta-buttons{flex-direction:column;width:100%;}
+  .cta-buttons .btn{width:100%;}
+  .hero-cta{width:100%;}
+  .hero-cta .btn{flex:1;}
+}

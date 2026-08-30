@@ -1,0 +1,27 @@
+/* =========================================================
+   WHY — seção "Por que a My Essence" (diferenciais)
+   ========================================================= */
+
+.why{background:var(--ink);color:var(--paper);}
+.why .eyebrow{color:var(--nude);}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:rgba(255,255,255,.14);
+  margin-top:56px;
+}
+.why-item{
+  background:var(--ink);
+  padding:40px 34px;
+}
+.why-item .num{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:15px;
+  color:var(--nude);
+  margin-bottom:22px;
+  display:block;
+}
+.why-item h3{font-size:22px;font-weight:400;margin-bottom:12px;}
+.why-item p{font-size:14.5px;color:#c9c5ba;line-height:1.65;}

@@ -1,0 +1,22 @@
+/* =========================================================
+   CTA — seção final "Pronta para encontrar seu próximo perfume?"
+   ========================================================= */
+
+.cta-section{
+  background:var(--nude);
+  text-align:center;
+}
+.cta-section h2{
+  font-size:clamp(32px,4.6vw,58px);
+  font-weight:400;
+  line-height:1.08;
+  max-width:720px;
+  margin:0 auto 22px;
+}
+.cta-section p{
+  max-width:460px;
+  margin:0 auto 36px;
+  color:#5c4d3d;
+  font-size:16px;
+}
+.cta-buttons{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
