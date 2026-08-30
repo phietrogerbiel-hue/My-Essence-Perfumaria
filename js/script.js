@@ -1,6 +1,6 @@
 // ===== PRODUCT DATA =====
 const products = [
-  { id:1, brand:"O Boticário — Cuide-se Bem", name:"Morango & Leite", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p01_morango_leite.jpg", desc:"Body splash Cuide-se Bem com fragrância doce de morango e leite. Pele perfumada e vegano." },
+  { id:1, brand:"O Boticário — Cuide-se Bem", name:"Morango & Leite", size:"Body Splash 200ml", price:190, cat:["splash"], img:"images/p01_morango_leite.jpg", desc:"Body splash Cuide-se Bem com fragrância doce de morango e leite. Pele perfumada e vegano." },
   { id:2, brand:"O Boticário — Cuide-se Bem", name:"Beijinho", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p02_beijinho.jpg", desc:"Fragrância adocicada inspirada no clássico beijinho. Vegano e com pele perfumada de longa duração." },
   { id:3, brand:"Natura", name:"Ilía Secreto", size:"Eau de Parfum 50ml", price:150, cat:["perfume"], img:"images/p03_ilia_secreto.jpg", desc:"Perfume Ilía Secreto, da linha Natura Ilía — uma fragrância envolvente e misteriosa para o dia a dia." },
   { id:4, brand:"O Boticário", name:"Arbo", size:"Colônia 100ml", price:150, cat:["perfume"], img:"images/p04_arbo.jpg", desc:"Fragrância verde e amadeirada, inspirada na natureza. Frasco esculpido com relevo de folhagem." },
