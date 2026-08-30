@@ -129,21 +129,36 @@ window.addEventListener('scroll', ()=>{
 });
 toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
 
-// ===== MOBILE MENU =====
 const burgerBtn = document.getElementById('burgerBtn');
 const mobileMenu = document.getElementById('mobileMenu');
-burgerBtn.addEventListener('click', ()=>{
-  const open = mobileMenu.classList.toggle('open');
-  burgerBtn.classList.toggle('active', open);
-  burgerBtn.setAttribute('aria-expanded', open);
-  document.body.style.overflow = open ? 'hidden' : '';
-});
-mobileMenu.querySelectorAll('a').forEach(a=>{
-  a.addEventListener('click', ()=>{
-    mobileMenu.classList.remove('open');
-    burgerBtn.classList.remove('active');
-    document.body.style.overflow = '';
-  });
+const menuOverlay = document.getElementById('menuOverlay');
+const mobileLinks = mobileMenu.querySelectorAll('a');
+
+function toggleMenu() {
+  const isOpen = mobileMenu.classList.toggle('open');
+  menuOverlay.classList.toggle('open', isOpen);
+  burgerBtn.classList.toggle('active', isOpen);
+  
+  // Bloqueia a rolagem do site enquanto o menu estiver aberto
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+
+function closeMenu() {
+  mobileMenu.classList.remove('open');
+  menuOverlay.classList.remove('open');
+  burgerBtn.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Abrir e fechar pelo botão do menu
+if (burgerBtn) burgerBtn.addEventListener('click', toggleMenu);
+
+// Fechar ao clicar na parte escura (fora da gaveta)
+if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+
+// Fechar automaticamente ao clicar em qualquer opção do menu
+mobileLinks.forEach(link => {
+  link.addEventListener('click', closeMenu);
 });
 
 // ===== SCROLL REVEAL =====
