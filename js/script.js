@@ -120,6 +120,35 @@ modalOverlay.addEventListener('click', (e)=>{ if(e.target === modalOverlay) clos
 document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
 
 // ===== HEADER SCROLL STATE =====
+// ===== THEME TOGGLE (modo claro/escuro) =====
+const themeToggle = document.getElementById('themeToggle');
+const THEME_KEY = 'my-essence-theme';
+
+function applyTheme(isDark){
+  document.documentElement.classList.toggle('dark', isDark);
+  themeToggle.setAttribute('aria-pressed', isDark);
+}
+
+function getStoredTheme(){
+  try{ return localStorage.getItem(THEME_KEY); }
+  catch(e){ return null; }
+}
+
+function storeTheme(value){
+  try{ localStorage.setItem(THEME_KEY, value); }
+  catch(e){ /* localStorage indisponível, ignora */ }
+}
+
+const storedTheme = getStoredTheme();
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+applyTheme(storedTheme ? storedTheme === 'dark' : prefersDark);
+
+themeToggle.addEventListener('click', ()=>{
+  const isDark = !document.documentElement.classList.contains('dark');
+  applyTheme(isDark);
+  storeTheme(isDark ? 'dark' : 'light');
+});
+
 const header = document.getElementById('siteHeader');
 const toTop = document.getElementById('toTop');
 window.addEventListener('scroll', ()=>{

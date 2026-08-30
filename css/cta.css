@@ -16,7 +16,8 @@
 .cta-section p{
   max-width:460px;
   margin:0 auto 36px;
-  color:#5c4d3d;
+  color:var(--ink);
+  opacity:.72;
   font-size:16px;
 }
 .cta-buttons{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}

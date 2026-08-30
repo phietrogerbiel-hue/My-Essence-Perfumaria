@@ -13,7 +13,8 @@ footer{background:var(--ink);color:var(--paper);padding:70px 0 30px;}
 .footer-brand .logo-word{color:var(--paper);}
 .footer-brand p{
   margin-top:18px;
-  color:#a9a498;
+  color:var(--paper);
+  opacity:.68;
   font-size:14px;
   max-width:280px;
   line-height:1.6;
@@ -27,8 +28,8 @@ footer{background:var(--ink);color:var(--paper);padding:70px 0 30px;}
   font-weight:600;
 }
 .footer-col ul{display:flex;flex-direction:column;gap:12px;}
-.footer-col a{font-size:14.5px;color:#c9c5ba;transition:color .2s ease;}
-.footer-col a:hover{color:var(--paper);}
+.footer-col a{font-size:14.5px;color:var(--paper);opacity:.78;transition:opacity .2s ease;}
+.footer-col a:hover{opacity:1;}
 .footer-bottom{
   padding-top:26px;
   display:flex;
@@ -36,5 +37,6 @@ footer{background:var(--ink);color:var(--paper);padding:70px 0 30px;}
   flex-wrap:wrap;
   gap:12px;
   font-size:12.5px;
-  color:#847e70;
+  color:var(--paper);
+  opacity:.55;
 }

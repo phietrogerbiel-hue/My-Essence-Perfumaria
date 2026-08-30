@@ -12,6 +12,13 @@
   .about-visual{max-width:420px;}
 }
 @media (max-width:860px){
+  main{display:flex;flex-direction:column;}
+  .hero{order:1;}
+  .marquee{order:2;}
+  .catalog{order:3;padding-bottom:40px;}
+  .about{order:4;padding-top:40px;}
+  .why{order:5;}
+  .cta-section{order:6;}
   nav.primary-nav{display:none;}
   .nav-actions .btn-outline{display:none;}
   .burger{display:flex;}
@@ -20,12 +27,19 @@
   .grid-products{grid-template-columns:repeat(2,1fr);}
   .modal-box{grid-template-columns:1fr;}
   .modal-media{min-height:220px;}
+  .hero-meta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px 20px;
+}
 }
 @media (max-width:560px){
   .wrap{padding:0 20px;}
   section{padding:76px 0;}
   .hero{padding-top:calc(var(--nav-h) + 40px);padding-bottom:60px;}
+  .hero-visual{order:0;margin-top:32px;margin-bottom:0;}
   .hero-badge{position:static;margin-top:16px;max-width:none;}
+  .about-visual{aspect-ratio:4/3;}
   .grid-products{grid-template-columns:repeat(2,1fr);}
   .card-body{padding:16px 16px 18px;}
   .card-name{font-size:16px;}

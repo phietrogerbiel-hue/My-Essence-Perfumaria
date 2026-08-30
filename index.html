@@ -39,7 +39,15 @@
     </nav>
     <div class="nav-actions">
       <a href="#colecao" class="btn btn-outline">Ver catálogo</a>
-      <a href="https://wa.me/559293885732?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20My%20Essence%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" rel="noopener" class="btn btn-dark">WhatsApp</a>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/escuro" aria-pressed="false">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>
+    </button>
       <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -73,8 +81,9 @@
         </div>
         <div class="hero-meta reveal">
           <div><strong>13</strong><span>Itens na coleção</span></div>
-          <div><strong>6</strong><span>Marcas selecionadas</span></div>
+          <div><strong>Entrega</strong><span>Para todo o Basil</span></div>
           <div><strong>100%</strong><span>Produtos originais</span></div>
+          <div><strong>3</strong><span>Categorias no catálogo</span></div>
         </div>
       </div>
       <div class="hero-visual reveal">
@@ -163,7 +172,7 @@
 
   <section class="cta-section" id="contato">
     <div class="wrap reveal">
-      <span class="eyebrow" style="color:#6b5946;">Fale com a gente</span>
+      <span class="eyebrow" style="color:var(--ink);opacity:.7;">Fale com a gente</span>
       <h2 style="margin-top:16px;">Pronta para encontrar seu próximo perfume?</h2>
       <p>Manda um oi no WhatsApp com o nome do produto que te chamou atenção — a gente confirma disponibilidade, forma de pagamento e combina a entrega.</p>
       <div class="cta-buttons">

@@ -17,9 +17,9 @@
   white-space:nowrap;
 }
 .btn-dark{background:var(--ink);color:var(--paper);}
-.btn-dark:hover{background:#000;transform:translateY(-2px);box-shadow:0 10px 24px -8px rgba(0,0,0,.35);}
+.btn-dark:hover{filter:brightness(0.88);transform:translateY(-2px);box-shadow:0 10px 24px -8px rgba(0,0,0,.35);}
 .btn-outline{border:1px solid var(--ink);color:var(--ink);}
 .btn-outline:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px);}
 .btn-nude{background:var(--nude-deep);color:#fff;}
-.btn-nude:hover{background:#7d6650;transform:translateY(-2px);}
+.btn-nude:hover{filter:brightness(0.88);transform:translateY(-2px);}
 .btn-sm{padding:10px 18px;font-size:11px;}

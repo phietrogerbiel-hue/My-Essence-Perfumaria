@@ -24,4 +24,4 @@
   display:block;
 }
 .why-item h3{font-size:22px;font-weight:400;margin-bottom:12px;}
-.why-item p{font-size:14.5px;color:#c9c5ba;line-height:1.65;}
+.why-item p{font-size:14.5px;color:var(--paper);opacity:.75;line-height:1.65;}
