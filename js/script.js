@@ -1,21 +1,21 @@
 // ===== PRODUCT DATA =====
 const products = [
   { id:1, brand:"O Boticário — Cuide-se Bem", name:"Morango & Leite", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p01_morango_leite.jpg", desc:"Body splash Cuide-se Bem com fragrância doce de morango e leite. Pele perfumada e vegano." },
-  { id:2, brand:"O Boticário — Cuide-se Bem", name:"Beijinho", size:"Body Splash 200ml", price:150, cat:["splash"], img:"{{P02}}", desc:"Fragrância adocicada inspirada no clássico beijinho. Vegano e com pele perfumada de longa duração." },
-  { id:3, brand:"Natura", name:"Ilía Secreto", size:"Eau de Parfum 50ml", price:150, cat:["perfume"], img:"{{P03}}", desc:"Perfume Ilía Secreto, da linha Natura Ilía — uma fragrância envolvente e misteriosa para o dia a dia." },
-  { id:4, brand:"O Boticário", name:"Arbo", size:"Colônia 100ml", price:150, cat:["perfume"], img:"{{P04}}", desc:"Fragrância verde e amadeirada, inspirada na natureza. Frasco esculpido com relevo de folhagem." },
-  { id:5, brand:"O Boticário — Cuide-se Bem", name:"Show de Banho", size:"Body Splash 200ml", price:150, cat:["splash"], img:"{{P05}}", desc:"Body splash Wonder Shower, leve e divertido, com pele perfumada e fórmula vegana." },
-  { id:6, brand:"Natura", name:"Ilía Florescer", size:"Eau de Parfum 50ml", price:150, cat:["perfume"], img:"{{P06}}", desc:"Perfume Ilía Florescer, com notas florais e amadeiradas em tom rosé — delicadeza em cada borrifada." },
-  { id:7, brand:"O Boticário", name:"Coffee Man Seduction", size:"Colônia 100ml", price:150, cat:["perfume"], img:"{{P07}}", desc:"Fragrância masculina intensa com notas de café e amadeirados, para quem gosta de presença marcante." },
-  { id:8, brand:"O Boticário — Cuide-se Bem", name:"Boa Noite", size:"Body Splash 200ml", price:150, cat:["splash"], img:"{{P08}}", desc:"Body splash Good Night, aroma suave e relaxante para fechar o dia. Vegano e pele perfumada." },
-  { id:9, brand:"O Boticário — Cuide-se Bem", name:"Pessegura", size:"Body Splash 200ml", price:150, cat:["splash"], img:"{{P09}}", desc:"Fragrância frutada de pêssego, fresca e vegana, com plástico reciclado na embalagem." },
-  { id:10, brand:"O Boticário", name:"Coffee Woman Seduction", size:"Colônia 100ml", price:150, cat:["perfume"], img:"{{P10}}", desc:"Versão feminina da linha Coffee Seduction, com fragrância envolvente e frasco em vidro rosé translúcido." },
-  { id:11, brand:"O Boticário — Cuide-se Bem", name:"Nuvem", size:"Body Splash 200ml", price:150, cat:["splash"], img:"{{P11}}", desc:"Fragrância suave e algodoada, inspirada em nuvens. Pele perfumada e fórmula vegana." },
-  { id:12, brand:"O Boticário — Cuide-se Bem", name:"Deleite", size:"Body Splash 200ml", price:150, cat:["splash"], img:"{{P12}}", desc:"Aroma cremoso e adocicado da linha Deleite, com plástico reciclado e fórmula vegana." },
-  { id:13, brand:"O.U.I Paris", name:"Madeleine 862 La Pistacherie", size:"Eau de Parfum importado", price:150, cat:["perfume","importado"], img:"{{P13}}", desc:"Fragrância importada O.U.I Paris, com notas gourmand de pistache — nossa peça de assinatura." },
+  { id:2, brand:"O Boticário — Cuide-se Bem", name:"Beijinho", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p02_beijinho.jpg", desc:"Fragrância adocicada inspirada no clássico beijinho. Vegano e com pele perfumada de longa duração." },
+  { id:3, brand:"Natura", name:"Ilía Secreto", size:"Eau de Parfum 50ml", price:150, cat:["perfume"], img:"images/p03_ilia_secreto.jpg", desc:"Perfume Ilía Secreto, da linha Natura Ilía — uma fragrância envolvente e misteriosa para o dia a dia." },
+  { id:4, brand:"O Boticário", name:"Arbo", size:"Colônia 100ml", price:150, cat:["perfume"], img:"images/p04_arbo.jpg", desc:"Fragrância verde e amadeirada, inspirada na natureza. Frasco esculpido com relevo de folhagem." },
+  { id:5, brand:"O Boticário — Cuide-se Bem", name:"Show de Banho", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p05_show_banho.jpg", desc:"Body splash Wonder Shower, leve e divertido, com pele perfumada e fórmula vegana." },
+  { id:6, brand:"Natura", name:"Ilía Florescer", size:"Eau de Parfum 50ml", price:150, cat:["perfume"], img:"images/p06_ilia_florescer.jpg", desc:"Perfume Ilía Florescer, com notas florais e amadeiradas em tom rosé — delicadeza em cada borrifada." },
+  { id:7, brand:"O Boticário", name:"Coffee Man Seduction", size:"Colônia 100ml", price:150, cat:["perfume"], img:"images/p07_coffee_man.jpg", desc:"Fragrância masculina intensa com notas de café e amadeirados, para quem gosta de presença marcante." },
+  { id:8, brand:"O Boticário — Cuide-se Bem", name:"Boa Noite", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p08_boa_noite.jpg", desc:"Body splash Good Night, aroma suave e relaxante para fechar o dia. Vegano e pele perfumada." },
+  { id:9, brand:"O Boticário — Cuide-se Bem", name:"Pessegura", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p09_pessegura.jpg", desc:"Fragrância frutada de pêssego, fresca e vegana, com plástico reciclado na embalagem." },
+  { id:10, brand:"O Boticário", name:"Coffee Woman Seduction", size:"Colônia 100ml", price:150, cat:["perfume"], img:"images/p10_coffee_woman.jpg", desc:"Versão feminina da linha Coffee Seduction, com fragrância envolvente e frasco em vidro rosé translúcido." },
+  { id:11, brand:"O Boticário — Cuide-se Bem", name:"Nuvem", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p11_nuvem.jpg", desc:"Fragrância suave e algodoada, inspirada em nuvens. Pele perfumada e fórmula vegana." },
+  { id:12, brand:"O Boticário — Cuide-se Bem", name:"Deleite", size:"Body Splash 200ml", price:150, cat:["splash"], img:"images/p12_deleite.jpg", desc:"Aroma cremoso e adocicado da linha Deleite, com plástico reciclado e fórmula vegana." },
+  { id:13, brand:"O.U.I Paris", name:"Madeleine 862 La Pistacherie", size:"Eau de Parfum importado", price:150, cat:["perfume","importado"], img:"images/p13_oui_pistacherie.jpg", desc:"Fragrância importada O.U.I Paris, com notas gourmand de pistache — nossa peça de assinatura." },
 ];
 
-const WA_NUMBER = "{{WA_NUMBER}}";
+const WA_NUMBER = 559293885732;
 function waLink(text){
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
 }
